@@ -1,0 +1,190 @@
+<!DOCTYPE html> 
+<html> 
+  <head>
+    <title> BIO sabores organicos</title>
+        <link rel="stylesheet" href="estilos.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+        </style>
+        
+    <title>Imagenes</title>
+    <link rel="stylesheet" href="estilos.css">
+  <head> 
+
+  <body>                 
+
+    <div id="logo">
+      <img src="Images/HOJA VERDE.png">
+    </div>
+    <img src="Images/LOGOBIO.png">
+       
+    <h1>.</h1>
+      <p>Refresca tu vida, come orgánico </p>
+
+     <!-- Slideshow container -->
+   <div class="slideshow-container">
+
+   <!-- Full-width images with number and caption text -->
+   <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="Images/comida organica gourmet.jpg" style="width:100%">
+    
+   </div>
+
+   <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="Images/Gourmet-Bocha-copia-2008860579-1657890823941.webp" style="width:100%">
+   
+   </div>
+
+   <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="Images/tapa-gourmet-sept.webp" style="width:100%">
+   
+   </div>
+
+   <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="Images/BNSK3AZKDNAV7MLQEALCUGOQ7M.webp" style="width:100%">
+    
+   </div>
+
+   <!-- Next and previous buttons -->
+   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+   <a class="next" onclick="plusSlides(1)">&#10095;</a>
+   </div>
+   <br>
+
+   <!-- The dots/circles -->
+   <div style="text-align:center">
+   <span class="dot" onclick="currentSlide(1)"></span>
+   <span class="dot" onclick="currentSlide(2)"></span>
+   <span class="dot" onclick="currentSlide(3)"></span>
+   <span class="dot" onclick="currentSlide(4)"></span>
+
+   </div>
+      <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+      </script>
+      
+    <div>
+      
+      <nav>
+        
+        <ul class="navegador">
+           <li><a href="index.html">Inicio</a></li>
+           <li><a href="sobre nosotros.html">Sobre nosotros</a></li> 
+           <li><a href="almacen.html">Almacen</a></li>
+           <li><a href="cursos.html">Cursos</a></li>
+           <li><a href="recetas.html">Recetas</a></li>
+           <li><a href="menu.html">Menu</a></li>
+        </ul> 
+      
+      </nav>  
+    </div>             
+   
+   <div class="contenedor-1">
+      <h2>Bio Restaurant</h2> 
+      <p>BIO es el primer Restaurant Orgánico Certificado de la Argentina.
+         Desde el año 2002 que tenemos un compromiso orientado al cuidado del 
+         planeta y de la alimentación sana e integral. Creemos que desde el lugar 
+         que elegimos como restaurant, podemos brindar una experiencia de sabor y responsabilidad.
+      </p>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="Images/PIzza-Esenia.jpg" alt="">
+            <h3> Pizza Esenia con Rucula</h3>
+           
+            <a href="menu.html">Leer mas</a>
+
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">            
+            <img src="Images/Salad-Mar-e1574769983700.jpg" alt="">
+            <h3>Ensalada Salad Mar</h3>
+            
+            <a href="menu.html">Leer mas</a>
+
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <img src="Images/Coconut-Flan-with-milk-jam.jpg" alt="">
+            <h3>Flan de Coco con Dulce de Leche</h3>
+            
+            <a href="menu.html">Leer mas</a>
+
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <img src="Images/Whole-Wheat-Bread-Sandwich-e1514572926635.jpg" alt="">
+            <h3>Sandwich BIO con guarnicion</h3>
+           
+            <a href="menu.html">Leer mas</a>
+
+          </div>
+        </div>
+      </div>
+  
+        
+<div class="hojafondo2">
+  <img src="Images/HOJA VERDE.png" alt="">
+</div>
+
+    <section class="form-register">
+      <h4>Formulario Registro</h4>
+       <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre">
+       <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su apellido">
+       <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+       <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
+      <p>Estoy de acuerdo con <a href="z">Terminos y Condiciones</a></p>
+      <p> <a href="z">¿Ya tenes cuenta?</a></p>
+       <input class="botons" type="submit" value="Registrer">
+    </section>
+
+      <footer>Humboldt 2192 (esq. Guatemala). Buenos Aires, Argentina.
+  
+        <div class="redes-sociales">
+          <a href=https://www.instagram.com/bio_soloorganico><img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt= "Instagram" class="logo"></a>
+          <a href="https://web.facebook.com/biosoloorganico/?_rdc=1&_rdr"><img src="Images/facebook.png" alt="facebook"></a>
+          <a href="https://twitter.com/biosoloorganico"> <img src="Images/twitter.png" alt="twitter?f"></a>
+        </div>
+      </footer>
+   </div>
+  
+  
+  </body> 
+
+
+<html>
